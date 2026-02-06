@@ -1,5 +1,7 @@
 import tkinter as tk 
 from tkinter import ttk
+from tkinter import filedialog
+import os
 
 #Window
 root = tk.Tk()
@@ -54,7 +56,15 @@ subtitle.grid(row=1, column=0, pady=(0, 16))
 
 #Button
 def klikk():
-    print("Du trykket på knappen!")
+    filename = filedialog.askopenfilename(
+        initialdir=os.path.expanduser("~"),
+        title="Velg en fil",
+        filetypes=(("Text files", "*.txt"), ("Alle filer", "*.*"))
+    )
+    if filename:
+        label_file_explorer.configure(text=f"Fil valgt: {filename}")
+    else:
+        label_file_explorer.configure(text="Ingen fil valgt")
 
 button = ttk.Button(card, text="Last opp fil", style="Accent.TButton", command=klikk)
 button.grid(row=2, column=0)
@@ -62,6 +72,4 @@ button.grid(row=2, column=0)
 #File explorer open
 
 
-
 root.mainloop()
-
