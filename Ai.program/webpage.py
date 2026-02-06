@@ -31,7 +31,7 @@ header.grid(row=0, column=0, sticky="ew")
 root.grid_columnconfigure(0, weight=1)
 
 #Name
-site_title = ttk.Label(header, text="Vital", style="Header.TLabel")
+site_title = ttk.Label(header, text="VitalScan", style="Header.TLabel")
 site_title.grid(row=0, column=1, sticky="w", padx=(12, 0))
 header.grid_columnconfigure(2, weight=1)  
 
@@ -64,3 +64,4 @@ button.grid(row=2, column=0)
 
 
 root.mainloop()
+
