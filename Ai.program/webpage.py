@@ -68,8 +68,5 @@ def klikk():
 button = ttk.Button(card, text="Last opp fil", style="Accent.TButton", command=klikk)
 button.grid(row=2, column=0)
 
-#File explorer open
-
 
 root.mainloop()
-
