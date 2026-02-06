@@ -59,8 +59,7 @@ def klikk():
     filename = filedialog.askopenfilename(
         initialdir=os.path.expanduser("~"),
         title="Velg en fil",
-        filetypes=(("Text files", "*.txt"), ("Alle filer", "*.*"))
-    )
+        filetypes=(("Text files", "*.txt"), ("Alle filer", "*.*")))
     if filename:
         label_file_explorer.configure(text=f"Fil valgt: {filename}")
     else:
@@ -73,3 +72,4 @@ button.grid(row=2, column=0)
 
 
 root.mainloop()
+
