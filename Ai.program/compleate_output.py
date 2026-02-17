@@ -9,7 +9,7 @@ from tensorflow.keras.applications.resnet50 import preprocessing_input
 from output import translate_prediction 
 
 # Laster ned ferdig lagd modell
-model = tf.keras.models.load_model("mri_analysis_model.keras")
+model = tf.keras.models.load_model("alzheimer_model.h5")
 
 # Sett in test bilde
 image_path = r #"Sett in hva du vil"
