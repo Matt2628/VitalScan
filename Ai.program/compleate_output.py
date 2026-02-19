@@ -8,10 +8,10 @@ from tensorflow.keras.applications.resnet50 import preprocess_input
 from translated_data import translate_prediction 
 
 # Laster ned ferdig lagd modell
-model = tf.keras.models.load_model("alzheimer_model.h5")
+model = tf.keras.models.load_model("mri_analysis_model.keras")
 
 # Sett in test bilde
-image_path = r"C:\Users\rosma\Documents\Maskinlæring II - Programmering\Python - Vår Semester 2026\Gruppe_Oppgave_1\Prosjekt\Testbilder\41598_2023_41576_Fig1_HTML.jpg"
+image_path = r"C:\Users\rosma\Documents\Maskinlæring II - Programmering\Python - Vår Semester 2026\Gruppe_Oppgave_1\Prosjekt\Testbilder\no-0002.jpg"
 
 # Behandle bilde
 img = image.load_img(image_path, target_size=(224, 224))
