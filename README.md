@@ -5,6 +5,7 @@
 
 ## In file explorer
 ### 1. Make sure you have downloaded the model file to your fileexplorer
+###    -  (The model is to big to be added to the repository, has to be shared with a memory stick)
 ### 3. Make sure you have an MRI Scan you want to diagnose in your fileexplorer
 ### 2. Make sure that you have a folder including these files:
 ###     -  The model (best_model.keras)
