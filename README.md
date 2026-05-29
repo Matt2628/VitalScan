@@ -1,5 +1,5 @@
 
-# VITALScan - Hown to run the program 
+# VITALScan - How to run the program 
 
 ---
 
@@ -12,7 +12,26 @@
 ###     -  translated_data.py
 ###     -  VitalScan_app.py
 
-## Running the program
+&nbsp;
+## Virtual environment
+#### 1. Create your virtual environment
+```bash
+python -m venv venv
+````
+#### 2. Activate your virtual environment
+##### Windows:
+```bash
+venv\Scripts\activate
+````
+##### Mac/Linux:
+```bash
+source venv/bin/activate
+````
+
+&nbsp;
+## Programs that need to be installed
+#### (Make sure that these are installed inside the venv)
+#### If any program recommends upgrading any of the software, so as such.
 ### 1. Install tensorflow:
    ```bash
    pip install tensorflow
@@ -22,6 +41,8 @@
            ```bash
            python VitalScan_app.py
            ```
+
+&nbsp;
 # VITALScan - How to use the program
 
 ---
